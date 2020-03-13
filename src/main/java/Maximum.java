@@ -1,5 +1,13 @@
 public class Maximum {
-    public static void main(String[] args) {
-        System.out.println("Welcome to Test Maximum project.");
+
+    public Integer maximumInteger (Integer[] maxInteger)
+    {
+        Integer maximum = 0;
+        for(Integer i: maxInteger)
+        {
+            if(i.compareTo(maximum)>0)
+                maximum=i;
+        }
+        return maximum;
     }
 }
