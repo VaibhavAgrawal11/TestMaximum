@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestMaximum" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-13T11:04:59" hostname="administrator-LIVA-Z2V" time="0.006">
+  <properties/>
+  <testcase name="givenThreeInteger_WhenProper_MaximumShouldBeTrue_2" classname="TestMaximum" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
