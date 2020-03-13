@@ -36,4 +36,12 @@ public class TestMaximum {
         Assert.assertEquals((Float)22.4f,maximumFloat);
     }
 
+    @Test
+    public void givenThreeStrings_WhenProper_MaximumShouldBeTrue() {
+        maximum = new Maximum();
+        String[] array = {"Vaibhav","Aish","YoYo"};
+        String maximumString = maximum.maximumString(array);
+        Assert.assertEquals("YoYo",maximumString);
+    }
+
 }
