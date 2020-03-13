@@ -20,5 +20,20 @@ public class TestMaximum {
         Assert.assertEquals(2,(int)maximumInteger);
     }
 
+    @Test
+    public void givenThreeFloat_WhenProper_MaximumShouldBeTrue() {
+        maximum = new Maximum();
+        Float[] array = {1.2f,22.3f,33f};
+        Float maximumFloat = maximum.maximumFloat(array);
+        Assert.assertEquals((Float)33f,maximumFloat);
+    }
+
+    @Test
+    public void givenThreeFloat_WhenProper_MaximumShouldBeTrue_2() {
+        maximum = new Maximum();
+        Float[] array = {1.2f,22.3f,22.4f};
+        Float maximumFloat = maximum.maximumFloat(array);
+        Assert.assertEquals((Float)22.4f,maximumFloat);
+    }
 
 }
