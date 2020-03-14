@@ -1,12 +1,30 @@
-public class Maximum {
-    public <E extends Comparable> E maximumGeneric (E[] maxString)
+//GENERIC CLASS
+public class Maximum<E extends Comparable> {
+    private  E firstValue;
+    private  E secondValue;
+    private  E thirdValue;
+
+    //PARAMETERIZED CONSTRUCTOR
+    public Maximum (E firstValue , E secondValue, E thirdValue) {
+        this.firstValue = firstValue;
+        this.secondValue = secondValue;
+        this.thirdValue = thirdValue;
+    }
+
+    //METHOD TO COMPARE GENERIC PARAMETERS AND RETURN MAXIMUM
+    public  <E extends Comparable> E testMaximum (E firstValue , E secondValue, E thirdValue)
     {
-        E maximum=maxString[0];
-        for(E index: maxString)
-        {
-            if(index.compareTo(maximum)>0)
-                maximum=index;
+        if (firstValue.compareTo(secondValue) >= 0 && firstValue.compareTo(thirdValue) >= 0) {
+            return (E)firstValue;
+        } else if (secondValue.compareTo(firstValue) >= 0 && secondValue.compareTo(thirdValue) >= 0) {
+            return (E) secondValue;
+        } else {
+            return (E) thirdValue;
         }
-        return maximum;
+    }
+
+    //METHOD OVERRIDEN TO INITIALISE PARAMETERS OF METHOD
+    public E testMaximum (){
+        return testMaximum(firstValue, secondValue, thirdValue);
     }
 }
