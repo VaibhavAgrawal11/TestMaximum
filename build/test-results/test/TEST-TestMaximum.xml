@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestMaximum" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-13T13:08:44" hostname="administrator-LIVA-Z2V" time="0.012">
+<testsuite name="TestMaximum" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-03-14T10:24:48" hostname="administrator-LIVA-Z2V" time="0.053">
   <properties/>
-  <testcase name="givenThreeStrings_WhenProper_MaximumShouldBeTrue" classname="TestMaximum" time="0.012"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenThreeGeneric_WhenProper_ShoulReturnMaximum" classname="TestMaximum" time="0.02"/>
+  <testcase name="givenThreeStrings_WhenProper_MaximumShouldBeTrue_2" classname="TestMaximum" time="0.002"/>
+  <testcase name="givenThreeStrings_WhenProper_MaximumShouldBeTrue_3" classname="TestMaximum" time="0.004"/>
+  <testcase name="givenThreeInteger_WhenProper_MaximumShouldBeTrue_2" classname="TestMaximum" time="0.003"/>
+  <testcase name="givenThreeInteger_WhenProper_MaximumShouldBeTrue" classname="TestMaximum" time="0.003"/>
+  <testcase name="givenThreeStrings_WhenProper_MaximumShouldBeTrue" classname="TestMaximum" time="0.001"/>
+  <testcase name="givenThreeFloat_WhenProper_MaximumShouldBeTrue" classname="TestMaximum" time="0.008"/>
+  <testcase name="givenThreeFloat_WhenProper_MaximumShouldBeTrue_2" classname="TestMaximum" time="0.002"/>
+  <system-out><![CDATA[Maximum Value : r
+Maximum Value : vaibhav
+Maximum Value : Vaibhav
+Maximum Value : 2
+Maximum Value : 3
+Maximum Value : YoYo
+Maximum Value : 33.0
+Maximum Value : 22.4
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
